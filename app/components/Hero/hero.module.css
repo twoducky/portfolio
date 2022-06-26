@@ -1,0 +1,148 @@
+.hero{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: calc(100vh*0.30) 14px;
+    overflow: hidden;
+    isolation: isolate;
+    
+    background: #F7F4F3;
+    
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #000000;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 704px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 0;
+}
+.title span{
+    color: var(--lite-pink);
+}
+
+.keyboard{    
+    position: absolute;
+    
+    width: 190vw;
+    right: -140vw;
+    top: 10vh;
+    
+    transform: rotate(30deg);
+
+    /* Inside auto layout */
+    z-index: 1;
+}
+
+.coffee{
+    position: absolute;
+    width: 60vw;
+    left: -20vw;
+    top: -10vh;
+
+    /* Inside auto layout */
+    z-index: 2;
+}
+
+.plant{
+    position: absolute;
+    width: calc(100vw*1.15);
+    left: -85vw;
+    bottom: -1vh;
+
+    /* Inside auto layout */
+    z-index: 3;
+}
+
+.social{
+    display: none;
+    z-index: 5;
+}
+
+@media only screen and (min-width: 560px){
+    .hero{
+        padding: calc(100vh*0.3) 60px;
+    }
+    .title{
+        font-size: 40px;
+        line-height: 54px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .keyboard{
+        width: 130vw;
+        right: -95vw;
+        top: 25vh;
+    }
+    .coffee{
+        width: 35vw;
+        left: -10vw;
+        top: -30vh;
+    }
+    .plant{
+        width: 115vw;
+        left: -80vw;
+        bottom: -50vh;
+    }
+    .title{
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .social{
+        display: block;
+        position: absolute;
+        bottom: 14px;
+        right: 0%;
+        transform: translateX(-35%);
+    }
+}
+
+@media only screen and (min-width: 1400px){
+    .keyboard{
+        width: 120vw;
+        right: -80vw;
+        top: 15vh;
+    }
+    .coffee{
+        width: 30vw;
+        left: -10vw;
+        top: -30vh;
+    }
+    .plant{
+        width: 115vw;
+        left: -80vw;
+        bottom: -80vh;
+    }
+    .title{
+        font-size: 62px;
+        line-height: 72px;
+    }
+    .social{
+        display: block;
+        position: absolute;
+        bottom: 14px;
+        right: 0%;
+        transform: translateX(-35%);
+    }
+}

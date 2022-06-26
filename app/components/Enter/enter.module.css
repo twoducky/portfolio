@@ -1,0 +1,19 @@
+.enter{
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    max-width: 80%;
+    position: relative;
+}
+
+@media only screen and (min-width: 800px){
+    .enter{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .enter{
+
+        display: flex;
+    }
+}

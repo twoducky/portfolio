@@ -1,0 +1,17 @@
+.socialbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5.63107px 0px;
+    gap: 23.23px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.bar{
+    width: 2px;
+    border-right: 1px solid #202020;
+}
