@@ -13,6 +13,7 @@
     flex: none;
     order: 4;
     align-self: stretch;
+    border-top: 1px solid #202020;
 }
 @media only screen and (min-width: 560px){
     .footer{

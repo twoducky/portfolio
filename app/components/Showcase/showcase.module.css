@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 131px 14px;
+    padding: 130px 14px;
     gap: 60px;
     isolation: isolate;
 
@@ -38,17 +38,15 @@
 .splash{
     display: none;
     order: 1;
-    justify-content: right;
     min-width: 440px;
     flex: 2 0 0;
-    position: relative ;
+    position: relative;
 }
 
 .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: stretch;
     width: 100%;
     flex-grow: 1;
 
@@ -68,15 +66,15 @@
     .wrapper{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        align-items: stretch;
     }
     .textblock{
-        max-width: 35%;
+        max-width: 30%;
     }
 }
 
 @media only screen and (min-width: 1400px){
     .showcase{
-        padding: 131px 10%;
+        padding: 130px 100px;
     }
 }

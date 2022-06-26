@@ -5,6 +5,7 @@ import timeline from '../../public/assets/timeline.svg'
 export default function Experience(){
     return(
         <div className={style.experience}>
+            <h2 className='project'>Summary</h2>
             <div className={style.textblock}>
                 <p className='heading'>Experience</p>
                 <p className={style.highlight}>
@@ -17,11 +18,10 @@ export default function Experience(){
                     Skilled in most tech stacks</p>
             </div>
             <div className={style.summaryblock}>
-                <h2 className='project'>Freelance</h2>
                 <p className='subheading'>10 years of curiosity</p>
-                <div className={style.timeline}>
-                    <Image src={timeline} layout='fill' objectFit='contain'/>
-                </div>
+            </div>
+            <div className={style.timeline}>
+                <Image src={timeline} layout='fill' objectFit='contain'/>
             </div>
         </div>
     )

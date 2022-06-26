@@ -28,18 +28,22 @@ export default function Showcase(props){
     return(
         <div className={style.showcase} style={{backgroundColor: bgColor}}>
             {props.children}
-            <h2 className='project' style={{color: text}}>{props.type}</h2>
+            
             <div className={style.wrapper}>
+            
                 <div className={style.textblock}>
+                <h2 className='project' style={{color: text}}>{props.type}</h2>
                     <p className='heading'  style={{color: text}}>{heading}</p>
                     <p className='focus' style={{color: highlight}}>{focus}</p>
                     <p className='detail' style={{color: text}}>{detail}</p>
+                    <Enter color={props.color} disable={props.disable} date={props.date}/>
                 </div>
                 <a className={style.splash} href={props.disable?null:"#"} target="_blank" onClick={(e) => e.preventDefault()}>
                     <Image src={splash[props.item]} layout='fill' objectFit='contain' />
                 </a>
+                
             </div>
-            <Enter color={props.color} disable={props.disable} date={props.date}/>
+            
         </div>
     )
 }

@@ -4,6 +4,7 @@
     flex-grow: 0;
     max-width: 80%;
     position: relative;
+    padding-top: 80px;
 }
 
 @media only screen and (min-width: 800px){
@@ -13,7 +14,7 @@
 }
 @media only screen and (min-width: 1200px){
     .enter{
-
         display: flex;
+        padding-top: 160px;
     }
 }

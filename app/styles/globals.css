@@ -34,6 +34,11 @@ a {
   box-sizing: border-box;
 }
 
+.container{
+  padding: 130px 14px;
+  min-height: 100vh;
+}
+
 .heading{
   font-family: 'Open Sans';
   font-weight: 500;
@@ -61,6 +66,7 @@ a {
 .project{
   font-weight: 400;
   font-size: 24px;
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 560px){
@@ -108,6 +114,9 @@ a {
   .project{
     font-size: 28px;
   }
+  .container{
+    padding: 130px 100px;
+  }
 }
 
 @media only screen and (min-width: 1800px){
@@ -132,5 +141,6 @@ a {
   
   .project{
     font-size: 32px;
+    padding-bottom: 160px;
   }
 }

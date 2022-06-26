@@ -19,13 +19,12 @@ export default function Home() {
 
       <main className={styles.main}>
         <Hero/>
-        <Showcase item={"galactic"} type={"Personal"} color={"dark"} disable={true} date={"6/30/22"}>
+        <Showcase className="container" item={"galactic"} type={"Personal"} color={"dark"} disable={true} date={"6/30/22"}>
           <div className={styles.weenie}>
             <Image src={weenie} />
           </div>
         </Showcase>
-        <Showcase item={"crowd"}  type={"Freelance"} color={"lite"} disable={true} date={"7/7/22"}/>
-        <Experience/>
+        <Showcase className="container" item={"crowd"}  type={"Freelance"} color={"lite"} disable={true} date={"7/7/22"}/>
         <Footer/>
       </main>
     </div>
