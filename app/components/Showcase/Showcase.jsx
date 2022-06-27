@@ -1,7 +1,6 @@
 import style from './showcase.module.css';
-import Image from 'next/image';
-import galactic from '../../public/assets/galacticguilds.svg'
-import crowd from '../../public/assets/crowdcheer.svg'
+const galactic = '/assets/galacticguilds.svg'
+const crowd = '/assets/crowdcheer.svg'
 import Enter from '../Enter'
 
 const headings = {"galactic": "Galactic Guilds", "crowd": "Crowdcheer"};
@@ -38,8 +37,8 @@ export default function Showcase(props){
                     <p className='detail' style={{color: text}}>{detail}</p>
                     <Enter color={props.color} disable={props.disable} date={props.date}/>
                 </div>
-                <a className={style.splash} href={props.disable?null:"#"} target="_blank" onClick={(e) => e.preventDefault()}>
-                    <Image src={splash[props.item]} layout='fill' objectFit='contain' />
+                <a className={style.splash} href={props.disable?null:"#"} target="_blank" rel="noreferrer" onClick={(e) => e.preventDefault()}>
+                    <img src={splash[props.item]} />
                 </a>
                 
             </div>

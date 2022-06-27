@@ -1,6 +1,5 @@
 import style from './experience.module.css';
-import Image from 'next/image';
-import timeline from '../../public/assets/timeline.svg'
+const timeline = '/assets/timeline.svg'
 
 export default function Experience(){
     return(
@@ -21,7 +20,7 @@ export default function Experience(){
                 <p className='subheading'>10 years of curiosity</p>
             </div>
             <div className={style.timeline}>
-                <Image src={timeline} layout='fill' objectFit='contain'/>
+                <img src={timeline} layout='fill' objectFit='contain'/>
             </div>
         </div>
     )

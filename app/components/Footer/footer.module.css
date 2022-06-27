@@ -28,6 +28,9 @@
     max-width: 680px;
     min-width: 280px;
 }
+.profile img{
+    width: 100%;
+}
 
 .wordblock{
     display: flex;

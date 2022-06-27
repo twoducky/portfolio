@@ -1,17 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Image from 'next/image'
 // import style from './social.module.css';
-import twitter_dark from '../../public/assets/twitter_dark.svg';
-import twitter_lite from '../../public/assets/twitter_lite.svg';
-import gmail_dark from '../../public/assets/gmail_dark.svg';
-import gmail_lite from '../../public/assets/gmail_lite.svg';
-import figma_dark from '../../public/assets/figma_dark.svg';
-import figma_lite from '../../public/assets/figma_lite.svg';
-import linkedin_dark from '../../public/assets/linkedin_dark.svg';
-import linkedin_lite from '../../public/assets/linkedin_lite.svg';
-import github_dark from '../../public/assets/github_dark.svg';
-import github_lite from '../../public/assets/github_lite.svg';
+const twitter_dark = '/assets/twitter_dark.svg';
+const twitter_lite = '/assets/twitter_lite.svg';
+const gmail_dark = '/assets/gmail_dark.svg';
+const gmail_lite = '/assets/gmail_lite.svg';
+const figma_dark = '/assets/figma_dark.svg';
+const figma_lite = '/assets/figma_lite.svg';
+const linkedin_dark = '/assets/linkedin_dark.svg';
+const linkedin_lite = '/assets/linkedin_lite.svg';
+const github_dark = '/assets/github_dark.svg';
+const github_lite = '/assets/github_lite.svg';
 
 const dark = {"twitter": twitter_dark, "gmail": gmail_dark, "figma": figma_dark, "linkedin": linkedin_dark, "github": github_dark};
 const lite = {"twitter": twitter_lite, "gmail": gmail_lite, "figma": figma_lite, "linkedin": linkedin_lite, "github": github_lite};
@@ -21,7 +20,7 @@ const Social = ({ item, color, ...props }) => {
   console.log("grabbing social: ", item);
   return (
     <a type="link" {...props}>
-      <Image src={imgsrc}/>
+      <img src={imgsrc} style={{width: "100%"}}/>
     </a>
   );
 };

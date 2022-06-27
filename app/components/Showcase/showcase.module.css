@@ -42,6 +42,9 @@
     flex: 2 0 0;
     position: relative;
 }
+.splash img{
+    width: 100%;
+}
 
 .wrapper{
     display: flex;

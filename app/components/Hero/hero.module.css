@@ -54,6 +54,9 @@
     /* Inside auto layout */
     z-index: 1;
 }
+.keyboard img{
+    width: 100%;
+}
 
 .coffee{
     position: absolute;
@@ -64,6 +67,9 @@
     /* Inside auto layout */
     z-index: 2;
 }
+.coffee img{
+    width: 100%;
+}
 
 .plant{
     position: absolute;
@@ -73,6 +79,9 @@
 
     /* Inside auto layout */
     z-index: 3;
+}
+.plant img{
+    width: 100%;
 }
 
 .social{
@@ -89,7 +98,36 @@
         line-height: 54px;
     }
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) and (max-height: 760px){
+    .keyboard{
+        width: 120vw;
+        right: -95vw;
+        top: 25vh;
+    }
+    .coffee{
+        width: 30vw;
+        left: -10vw;
+        top: -30vh;
+    }
+    .plant{
+        width: 110vw;
+        left: -80vw;
+        bottom: -50vh;
+    }
+    .title{
+        font-size: 48px;
+        line-height: 64px;
+        max-width: 680px;
+    }
+    .social{
+        display: block;
+        position: absolute;
+        bottom: 14px;
+        right: 0%;
+        transform: translateX(-35%);
+    }
+}
+@media only screen and (min-width: 1200px) and (min-height: 760px){
     .keyboard{
         width: 130vw;
         right: -95vw;

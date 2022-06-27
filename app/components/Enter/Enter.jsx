@@ -1,11 +1,10 @@
 import style from './enter.module.css';
-import Image from 'next/image';
-import enter_dark_empty from '../../public/assets/enter_dark_empty.svg'
-import enter_dark_full from '../../public/assets/enter_dark_full.svg'
-import enter_lite_empty from '../../public/assets/enter_lite_empty.svg'
-import enter_lite_full from '../../public/assets/enter_lite_full.svg'
-import construction_dark from '../../public/assets/construction_dark.svg'
-import construction_lite from '../../public/assets/construction_lite.svg'
+const enter_dark_empty = '/assets/enter_dark_empty.svg'
+const enter_dark_full = '/assets/enter_dark_full.svg'
+const enter_lite_empty = '/assets/enter_lite_empty.svg'
+const enter_lite_full = '/assets/enter_lite_full.svg'
+const construction_dark = '/assets/construction_dark.svg'
+const construction_lite = '/assets/construction_lite.svg'
 import { useState } from 'react';
 
 export default function Enter(props){
@@ -14,13 +13,13 @@ export default function Enter(props){
     const [imgsrc, setImage] = useState(srcs[props.color]);
 
     return(
-        <a className={style.enter} href={props.disable?null:"#"} target="_blank">
+        <a className={style.enter} href={props.disable?null:"#"} target="_blank" rel="noreferrer">
             {props.disable?
             <div >
-                <Image src={props.color=="dark"?construction_lite:construction_dark}/>
+                <img src={props.color=="dark"?construction_lite:construction_dark} style={{width: "100%"}}/>
                 <p style={{fontWeight: "500", color: props.color=="dark"?"white":"black", width: "100%", textAlign: "center"}}>ETA: {props.date!==undefined?props.date:"soon"}</p>
             </div>:
-            <Image src={imgsrc} 
+            <img style={{width: "100%"}} src={imgsrc} 
             onMouseOver={e => {setImage(hover[props.color]);}} 
             onMouseOut={e => {setImage(srcs[props.color]);}}
             />}
