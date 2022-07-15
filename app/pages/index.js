@@ -10,19 +10,19 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Evan Andrews | Portfolio</title>
-        <meta name="description" content="Fullstack designer working with startups to create growth-driven products" />
+        <meta name="description" content="Fullstack CX manager working with startups to create growth-driven products" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
       </Head>
 
       <main className={styles.main}>
         <Hero/>
-        <Showcase className="container" item={"galactic"} type={"Personal"} color={"dark"} disable={true} date={"6/30/22"}>
+        <Showcase className="container" item={"galactic"} type={"Personal"} color={"dark"} disable={false} date={"6/30/22"}>
           <div className={styles.weenie}>
             <img src={weenie} />
           </div>
         </Showcase>
-        <Showcase className="container" item={"crowd"}  type={"Freelance"} color={"lite"} disable={true} date={"7/7/22"}/>
+        <Showcase className="container" item={"crowd"}  type={"Freelance"} color={"lite"} disable={true} date={"TBD"}/>
         <Footer/>
       </main>
     </div>

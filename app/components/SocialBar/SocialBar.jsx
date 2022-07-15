@@ -36,7 +36,7 @@ export default function SocialBar(){
             }}/>
             <Social item="twitter" color="dark" href="https://twitter.com/e_makesthings"/>
             <div className={style.bar}></div>
-            <Social item="figma" color="dark" href="https://www.figma.com/file/prIZFVnpo9sVv1NuFDbplQ/Portfolio"/>
+            <Social item="figma" color="dark" href="https://www.figma.com/proto/NsfKNPFjEfqQOpz6ZRxTbU/Stories-%26-Studies?node-id=70%3A305&scaling=min-zoom&page-id=0%3A1"/>
             <Social item="github" color="dark" href="https://github.com/twoducky/portfolio"/>
         </div>
     )

@@ -13,7 +13,7 @@ export default function Enter(props){
     const [imgsrc, setImage] = useState(srcs[props.color]);
 
     return(
-        <a className={style.enter} href={props.disable?null:"#"} target="_blank" rel="noreferrer">
+        <a className={style.enter} href={props.disable?null:props.href} target="_blank" rel="noreferrer">
             {props.disable?
             <div >
                 <img src={props.color=="dark"?construction_lite:construction_dark} style={{width: "100%"}}/>
