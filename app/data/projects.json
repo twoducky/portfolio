@@ -1,16 +1,62 @@
 {
     "galactic": {
         "headings": "Galactic Guilds",
-        "foci": "UI/UX & System Design + Web App Development",
+        "foci": "Solo new business development",
         "details": "A content management system for Twitch streamers designed to help grow their audience and increase revenue.",
         "splash": "/assets/galacticguilds.svg",
-        "href": "https://www.figma.com/proto/NsfKNPFjEfqQOpz6ZRxTbU/Stories-%26-Studies?node-id=70%3A305&scaling=min-zoom&page-id=0%3A1"
+        "href": "https://www.figma.com/proto/NsfKNPFjEfqQOpz6ZRxTbU/Stories-%26-Studies?node-id=70%3A305&scaling=min-zoom&page-id=0%3A1",
+        "bgColor": "#09151B",
+        "text": "white",
+        "highlight": "#02787B"
     },
     "crowd": {
         "headings": "Crowdcheer",
-        "foci": "UI & System Design + Audio Visualization",
+        "foci": "UI & system design, audio visualization",
         "details": "Designing an app to visualize authentic fan reactions for socially distanced live events.",
-        "splash": "/assets/crowdcheer.svg",
-        "href": "#"
+        "splash": "/assets/crowdcheer.png",
+        "href": "#",
+        "bgColor": "white",
+        "text": "black",
+        "highlight": "#D7252C"
+    },
+    "rogue": {
+        "headings": "Rogue Exchange",
+        "foci": "Intrapreneurial spinoff, market research & testing",
+        "details": "Designing a decentralized protocol for trustless peer-to-peer token transfer on Ethereum.",
+        "splash": "/assets/rogue.png",
+        "href": "#",
+        "bgColor": "#101021",
+        "text": "white",
+        "highlight": "#6A268A"
+    },
+    "selfmade": {
+        "headings": "SelfMade",
+        "foci": "Product management w/o authority, mobile dev",
+        "details": "Designing a platform to democratize venture capital on the blockchain.",
+        "splash": "/assets/selfmade.png",
+        "href": "#",
+        "bgColor": "white",
+        "text": "black",
+        "highlight": "#A20100"
+    },
+    "lynt": {
+        "headings": "Lynt",
+        "foci": "Product management, UX, branding",
+        "details": "Designing an app to reduce the friction and embarassement of using coupons when dining.",
+        "splash": "/assets/lynt.png",
+        "href": "#",
+        "bgColor": "white",
+        "text": "black",
+        "highlight": "#5c84c1"
+    },
+    "laforge": {
+        "headings": "LaForge Optical",
+        "foci": "Hardware & software development, raised VC, engineering management",
+        "details": "Developing an AR headset, seemlessly built into perscription glasses.",
+        "splash": "/assets/laforge.png",
+        "href": "#",
+        "bgColor": "#0d141a",
+        "text": "white",
+        "highlight": "#9129CC"
     }
 }

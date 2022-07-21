@@ -3,9 +3,6 @@ import Enter from '../Enter';
 import content from '../../data/projects.json';
 
 export default function Showcase(props){
-    const bgColor = props.color=="dark"? "var(--dark)" : "var(--lite)";
-    const text = props.color=="dark"? "white" : "black";
-    const highlight = props.color=="dark"? "var(--dark-pink)" : "var(--lite-pink)";
     const item = props.item
 
     const heading = content[item].headings;
@@ -13,6 +10,9 @@ export default function Showcase(props){
     const detail = content[item].details;
     const href = content[item].href;
     const splash = content[item].splash;
+    const bgColor = content[item].bgColor;
+    const text = content[item].text;
+    const highlight = content[item].highlight;
 
     return(
         <div className={style.showcase} style={{backgroundColor: bgColor}}>
@@ -22,10 +22,10 @@ export default function Showcase(props){
             
                 <div className={style.textblock}>
                 <h2 className='project' style={{color: text}}>{props.type}</h2>
-                    <p className='heading'  style={{color: text}}>{heading}</p>
-                    <p className='focus' style={{color: highlight}}>{focus}</p>
-                    <p className='detail' style={{color: text}}>{detail}</p>
-                    <Enter color={props.color} disable={props.disable} date={props.date} href={href}/>
+                <p className='heading'  style={{color: text}}>{heading}</p>
+                <p className='focus' style={{color: highlight}}>{focus}</p>
+                <p className='detail' style={{color: text}}>{detail}</p>
+                <Enter color={props.color} disable={props.disable} date={props.date} href={href}/>
                 </div>
                 <a className={style.splash} href={props.disable?null:href} target="_blank" rel="noreferrer">
                     <img src={splash} />

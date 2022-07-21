@@ -7,7 +7,7 @@ const plant = '/assets/plant.svg';
 export default function Hero(){
     return(
         <div className={style.hero}>
-            <h1 className={style.title}>Fullstack CX manager working with startups to create{' '}<span>growth-driven</span>{' '}products.</h1>
+            <h1 className={style.title}>Fullstack PM working with startups to create{' '}<span>growth-driven</span>{' '}products.</h1>
             <div className={style.keyboard}>
                 <img src={keyboard} />
             </div>
